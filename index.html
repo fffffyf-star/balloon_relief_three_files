@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>气球解压 · 手势互动</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="scene"></div>
+<div id="hud">
+  <div class="panel">
+    <div id="title">BALLOON RELIEF</div>
+    <div id="subtitle">气球解压 · 手势互动实验室</div>
+  </div>
+  <div class="panel" id="stats">
+    <div style="font-size:11px;color:#b9c7ff">POP SCORE</div>
+    <div id="score">000</div>
+    <div id="popped" style="font-size:11px;color:#c5caff">已捏爆 0 个</div>
+  </div>
+</div>
+<div id="help">✊ 捏合拇指 + 食指：捏爆气球<br>👋 快速挥手：把附近气球打飞<br>🖐 移动手掌：拨动气球</div>
+<div id="camWrap"><video id="webcam" autoplay playsinline muted></video><div id="camLabel">CAMERA PREVIEW</div></div>
+<div id="status"><button id="start">开启摄像头并开始</button>　建议使用 Chrome / Edge，并允许摄像头权限</div>
+<script type="module" src="sketch.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+:root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; overflow:hidden; background:#08051b; color:#fff; font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif; }
+  #scene { position:fixed; inset:0; }
+  #hud { position:fixed; z-index:2; top:18px; left:18px; right:18px; display:flex; gap:12px; align-items:flex-start; justify-content:space-between; pointer-events:none; }
+  .panel { background:rgba(11,12,45,.62); border:1px solid rgba(166,176,255,.22); border-radius:16px; padding:12px 15px; backdrop-filter:blur(12px); box-shadow:0 8px 35px #0003; }
+  #title { font-size:clamp(18px,2.4vw,28px); font-weight:800; letter-spacing:.04em; }
+  #subtitle { color:#b9c7ff; font-size:12px; margin-top:3px; }
+  #stats { text-align:right; min-width:112px; }
+  #score { font-size:28px; font-weight:800; color:#8df7ff; line-height:1.1; }
+  #status { position:fixed; z-index:3; left:50%; bottom:20px; transform:translateX(-50%); max-width:calc(100vw - 24px); text-align:center; white-space:nowrap; padding:10px 16px; border-radius:999px; background:rgba(12,13,44,.8); border:1px solid #7379ca66; color:#e7eaff; font-size:13px; }
+  #start { pointer-events:auto; cursor:pointer; border:0; border-radius:12px; padding:11px 16px; color:#10122f; font-weight:800; background:linear-gradient(135deg,#91fff0,#b9a4ff); }
+  #camWrap { position:fixed; z-index:2; right:18px; bottom:18px; width:150px; height:112px; overflow:hidden; border-radius:14px; border:1px solid #a6b0ff55; background:#111; opacity:.75; }
+  #webcam { width:100%; height:100%; object-fit:cover; transform:scaleX(-1); }
+  #camLabel { position:absolute; bottom:4px; left:7px; font-size:10px; text-shadow:0 1px 4px #000; }
+  #help { position:fixed; z-index:2; left:18px; bottom:18px; max-width:calc(100vw - 205px); color:#d7dcff; font-size:12px; line-height:1.7; }
+  @media(max-width:600px){ #hud{top:10px;left:10px;right:10px}.panel{padding:9px 11px}#help{left:10px;bottom:12px;font-size:11px;max-width:calc(100vw - 175px)}#camWrap{right:10px;bottom:12px;width:125px;height:94px}#status{bottom:122px;font-size:11px} }
